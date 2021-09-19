@@ -17,6 +17,7 @@ Email: akshaykalyan2307@gmail.com -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
         type="text/css" />
+
     <style type="text/css">
         body {
             -webkit-font-smoothing: antialiased;
@@ -203,6 +204,13 @@ Email: akshaykalyan2307@gmail.com -->
             </table>
 
         </div>
+        <div id="gallery2" class="ui items  column five wide">
+            <div class="ui raised segment" v-for="(item, index) in images[select]"> <img
+                    class="ui rounded bordered image" :key="index" :src="'static/images'+item">
+
+            </div>
+
+        </div>
     </div>
 
 
@@ -309,7 +317,16 @@ Email: akshaykalyan2307@gmail.com -->
                 "Jig Saw",
                 "Working Table"
 
-            ]];
+            ]
+        ];
+        var images = [
+            ["/1 Machine Shop/20210103_095541.jpg", "/1 Machine Shop/WhatsApp Image 2021-03-19 at 4.25.29 PM (1).jpeg", "/1 Machine Shop/WhatsApp Image 2021-03-19 at 4.25.29 PM.jpeg", "/1 Machine Shop/WhatsApp Image 2021-03-19 at 4.25.32 PM.jpeg"],
+            ["/2 Welding Shop/1.jpeg", "/2 Welding Shop/2.jpeg"],
+            ["/3 Foundry Shop/1.jpeg", "/3 Foundry Shop/20210319_105545.jpg", "/3 Foundry Shop/20210319_110614.jpg", "/3 Foundry Shop/20210319_105409.jpg", "/3 Foundry Shop/20210319_110233.jpg", "/3 Foundry Shop/20210319_111315.jpg"],
+            ["/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.07 PM.jpeg", "/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.07 PM (1).jpeg", "/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.06 PM (1).jpeg", "/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.05 PM.jpeg",],
+            ["/5 Fitting Shop/WhatsApp Image 2021-03-19 at 4.25.25 PM.jpeg", "/5 Fitting Shop/WhatsApp Image 2021-03-19 at 4.25.24 PM.jpeg", "/5 Fitting Shop/20210103_095527.jpg",],
+            ["/6 Smithy/WhatsApp Image 2021-03-19 at 4.35.01 PM (3).jpeg", "/6 Smithy/WhatsApp Image 2021-03-19 at 4.35.00 PM (4).jpeg", "/6 Smithy/WhatsApp Image 2021-03-19 at 4.35.00 PM (2).jpeg"]
+        ]
         var select = 0;
         var shops = ["Fitting Shop",
             "Machine Shop",
@@ -318,12 +335,14 @@ Email: akshaykalyan2307@gmail.com -->
             "Smithy Shop",
             "Carpentry Shop"];
 
+
         var app = new Vue({
             el: "#root",
             data: {
                 shops_facilities,
                 select,
-                shops
+                shops,
+                images
             },
             methods: {
                 selection: function (i) {
@@ -332,6 +351,8 @@ Email: akshaykalyan2307@gmail.com -->
                 },
 
             },
+
+
 
         });
     </script>
