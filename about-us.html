@@ -12,9 +12,24 @@ Email: akshaykalyan2307@gmail.com -->
     <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
     <meta name="author" content="PPType" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Homepage Template for Semantic-UI</title>
+    <title>Modern Workshop IITR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
         type="text/css" />
+
+    <!-- development version -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+    <link href="./dist/jquery.roadmap.min.css" rel="stylesheet" type="text/css" />
+
     <style type="text/css">
         body {
             -webkit-font-smoothing: antialiased;
@@ -121,18 +136,85 @@ Email: akshaykalyan2307@gmail.com -->
             }
         }
 
+        .ui.inverted {
+            border-radius: 0px;
+            background-color: #2980b9 !important;
+        }
+
         .ui.secondary.inverted.pointing.menu {
             border-width: 0ch;
         }
     </style>
 </head>
+<header>
+    <div class="topHeaderWrapper">
+        <div class="topHeaderInner">
+            <div class="topMenu">
+                <a href="https://www.iitr.ac.in/Main/pages/_en_For_Faculty__en_.html">
+                    <span class="topNavItems">Employees</span>
+                </a>
+                <a href="http://daair.iitr.ac.in">
+                    <span class="topNavItems"> Alumni</span>
+                </a>
+                <a href="https://www.iitr.ac.in/Placements/pages/index.html">
+                    <span class="topNavItems">Placements</span>
+                </a>
+                <a href="https://www.iitr.ac.in/Main/pages/_en_For_Current_Students__en_.html">
+                    <span class="topNavItems">Students</span>
+                </a>
+                <a href="http://www.iitr.ac.in/internationalrelations">
+                    <span class="topNavItems">International Relations</span>
+                </a>
+                <a href="https://www.iitr.ac.in/Main/pages/_en_For_Visitors__en_.html">
+                    <div class="topNavItems">Visitors</div>
+                </a>
+                <a href="http://www.iitr.ac.in/hi/Main/pages/index.html">
+                    <div class="topNavItems">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;
+                        &#2360;&#2306;&#2360;&#2381;&#2325;&#2352;&#2339;</div>
+                </a>
+                <!-- Language Option -->
+                <a href="#" data-toggle="tooltip" data-placement="right"
+                    title="&#2311;&#2360; &#2357;&#2375;&#2348; &#2360;&#2366;&#2311;&#2335; &#2325;&#2375; &#2325;&#2367;&#2360;&#2368; &#2349;&#2368; &#2346;&#2371;&#2359;&#2381;&#2336; &#2325;&#2379; &#2361;&#2367;&#2306;&#2342;&#2368;/&#2309;&#2306;&#2327;&#2381;&#2352;&#2375;&#2332;&#2368; &#2360;&#2361;&#2367;&#2340; &#2309;&#2344;&#2375;&#2325; &#2349;&#2366;&#2352;&#2340;&#2368;&#2351; &#2340;&#2341;&#2366; &#2357;&#2367;&#2342;&#2375;&#2358;&#2368; &#2349;&#2366;&#2359;&#2366;&#2323;&#2306; &#2350;&#2375;&#2306; &#2342;&#2375;&#2326;&#2366; &#2332;&#2366; &#2360;&#2325;&#2340;&#2366; &#2361;&#2376; &#2404; &#2311;&#2360;&#2325;&#2375; &#2354;&#2367;&#2319; &#2357;&#2366;&#2306;&#2331;&#2367;&#2340; &#2346;&#2371;&#2359;&#2381;&#2336; &#2346;&#2352; &#2352;&#2366;&#2311;&#2335; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2325;&#2375; translate to English &#2346;&#2352; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2344;&#2375; &#2360;&#2375; translated &#2325;&#2376;&#2346;&#2381;&#2358;&#2344; &#2310;&#2351;&#2375;&#2327;&#2366; &#2332;&#2367;&#2360;&#2350;&#2375;&#2306; option &#2346;&#2352; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2344;&#2375; &#2360;&#2375; &#2357;&#2366;&#2306;&#2331;&#2367;&#2340; &#2346;&#2371;&#2359;&#2381;&#2336; &#2325;&#2379; &#2350;&#2344;&#2330;&#2366;&#2361;&#2368; &#2349;&#2366;&#2359;&#2366; &#2350;&#2375;&#2306; &#2342;&#2375;&#2326;&#2366; &#2332;&#2366; &#2360;&#2325;&#2340;&#2366; &#2361;&#2376; &#2404;
+
+Any page on this web site can be viewed in many Indian and foreign languages, including Hindi / English. For this, right click on the desired page and clicking on translate to English will return the translated caption which allows you to view the desired page in the desired language.">
+                    <div class="topNavItems">Language Option</div>
+                </a>
+
+                <!-- Ends -->
+            </div>
+            <div class="searchbox">
+                <form id="searchbox_000720205207703739410:jvbgxvsvauq"
+                    action="https://www.iitr.ac.in/Main/pages/_en_Search__en_.html">
+                    <input type="hidden" name="cx" value="000720205207703739410:jvbgxvsvauq">
+                    <input type="hidden" name="cof" value="FORID:11">
+                    <input name="q" id="search1" type="text" size="10" placeholder="Search here">
+                    <button type="submit"><i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mainHeader">
+        <div class="deptlogo">
+            Department of <span>Mechanical and Industrial Engineering</span>
+        </div>
+        <div class="logo">
+            <a href="https://www.iitr.ac.in/Main/pages/_en_Indian_Institute_of_Technology_Roorkee__en_.html">
+                <img src="https://www.iitr.ac.in/assets/images/logo.png" alt="">
+            </a>
+
+        </div>
+    </div>
+
+
+</header>
 
 <body id="root">
     <div class="ui huge top inverted  menu">
         <div class="ui container">
-            <a class=" item" href="./index.html">Home</a> <a class="item" href="./about-us.html">About Us</a>
+            <a class=" item" href="./index.html">Home</a> <a class="item active" href="./about-us.html">About Us</a>
             <a class="item" href="./facility.html">Facility</a><a class="item" href="./team.html">Team</a> <a
-                class="item active" href="./contact-us.html">Contact Us</a>
+                class="item " href="./contact-us.html">Contact Us</a>
             <div class="right menu">
                 <!-- <div class="item"><a class="ui button">Log in</a></div>
           <div class="item"><a class="ui primary button">Sign Up</a></div> -->
@@ -141,222 +223,156 @@ Email: akshaykalyan2307@gmail.com -->
     </div>
     <!--Sidebar Menu-->
     <div class="ui vertical inverted sidebar menu">
-        <a class=" item">Home</a> <a class="item" href="./about-us.html">About Us</a>
-        <a class="item" href="./facility.html">Facility</a><a class="item" href="team.html">Team</a> <a
-            class="item active" href="./contact-us.html">Contact Us</a>
+        <a class=" item">Home</a> <a class="item active" href="./about-us.html">About Us</a>
+        <a class="item" href="./facility.html">Facility</a><a class="item" href="team.html">Team</a> <a class="item "
+            href="./contact-us.html">Contact Us</a>
     </div>
     <!--Page Contents-->
 
     </div>
 
     <div class="ui container">
-        <div class="segment ui">
+        <div class="ui vertical padded segment">
+            <div class="ui grid">
+                <div class="row">
+                    <p>
+                        The Modern Workshop is a common facility which provides fabrication services for projects and
+                        prototype fabrication to all the students and faculty members of the Institute. The vision,
+                        scope and mission of the proposed modern workshop are as mentioned below.
+                    </p>
+                    <div class="eight wide column">
 
-            <h2 class="ui header">
-                <i class="address card outline icon"></i>
-                <div class="content">
-                    Our Contacts
-                    <div class="sub header">Connect with us</div>
-                </div>
-            </h2>
-            <div class="ui divider"></div>
-            <div class="ui cards">
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Prof. B.K. Gandhi</div>
-                        <div class="meta">Head of Department</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                +91-1332-285544
+
+
+                        <div class="row">
+                            <h2 class="ui devider header">
+                                VISION
+
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="ui bulleted  list">
+                                <div class="item">Act as a resource base for technically sound and trained engineers.
+                                </div>
+                                <div class="item">Attain excellence and become a unique Institution.</div>
+                                <div class="item">Become an incubation Centre for design, planning and realizing the
+                                    innovative
+                                    ideas
+                                    generated
+                                    by
+                                    young engineering students.</div>
+                                <div class="item"> To impart quality education to achieve excellence in teaching
+                                    learning
+                                    and
+                                    research.</div>
+                                <div class="item"> To provide skill oriented training to meet the need of the industry
+                                    and
+                                    society.</div>
+                                <div class="item"> To undertake collaborative projects with academia and industries.
+                                </div>
                             </div>
-                            <i class="mail icon"></i>
-                            bkgandhi@me.iitr.ac.in
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Prof. Inderdeep Singh</div>
-                        <div class="meta">Coordinator</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                +91-1332-285614
-                            </div>
-                            <i class="mail icon"></i>
-                            inderdeep.singh@me.iitr.ac.in
+                        <br>
+                        <div class="row">
+                            <h2 class="ui devider header">
+                                SCOPE
+
+                            </h2>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Prof. Varun Sharma</div>
-                        <div class="meta">Co-Coordinator</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                +91-1332-284907
-                            </div>
-                            <i class="mail icon"></i>
-                            varun.sharma@me.iitr.ac.in
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Prof. S. Dutta</div>
-                        <div class="meta">Co-Coordinator</div>
-                        <div class="description">
-                            <i class="mail icon"></i>
-                            sushanta@me.iitr.ac.in
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Prof. Vidit Gaur</div>
-                        <div class="meta">Co-Coordinator</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                +91-1332-284909
-                            </div>
-                            <i class="mail icon"></i>
-                            vidit.gaur@me.iitr.ac.in
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Sh. B.K. Ramaniya</div>
-                        <div class="meta">Superintendent Workshop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                5758
-                            </div>
-                            <i class="mail icon"></i>
-                            kumarmme@iitr.ac.in
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Machine Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6482
+                        <div class="row">
+                            In order to attain the visions, modern workshop being used mainly for the following
+                            activities :
+                            <div class="ui bulleted  list">
+
+                                <div class="item">
+
+                                    To provide a good theoretical background as well as a sound practical on hand
+                                    practice
+                                    to students to impart basic knowledge of different Manufacturing Processes and
+                                    properties of different material used in industry and to appraise the students of
+                                    basics
+                                    and applications of various types of machines-tools and equipment used in different
+                                    shops such as Machine Shop, Fitting Shop, Foundry Shop, Smithy Shop, Welding Shop,
+                                    Carpentry Shop and Electric Repair & Maintenance Shop of Mechanical Workshop.
+                                </div>
+
+                                <div class="item">
+                                    Each Shop has relevant charts, Lab. manuals, demonstration board and operations
+                                    which
+                                    help in imparting quality education to students.
+                                </div>
+
+                                <div class="item">
+                                    Fabrication of Projects/Samples/Test Pieces of B.Tech. , M.Tech. and Research
+                                    students, Sponsored Projects, Faculty Research Projects and Laboratory equipment
+                                    etc.
+                                </div>
+
+                                <div class="item"> Miscellaneous work of non-academic sections of the Institute.</div>
+                                <div class="item">
+
+                                    To conduct some short term training programs for participants of Institute and
+                                    outside.
+                                </div>
+                                <br>
+
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Fitting Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6482
-                            </div>
-                        </div>
+
+                    <div class="eight wide column">
+                        <div class="ui raised segment"><img src="static/images/hero/20210319_101234.jpg"
+                                class="ui rounded bordered image"></div>
+
+
                     </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Foundry Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6484
+                    <div class="sixteen wide column">
+                        <div class="row">
+                            <h2 class="ui  header">
+                                MISSION
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="ui bulleted   list">
+                                <div class="item">Acquiring most modern Machine-tools and equipment to transform
+                                    existing
+                                    inadequate and age-old technical support and educational facilities, and designing
+                                    the
+                                    training programs for student and Workshop staff to meet the requirement of the
+                                    teaching,
+                                    practice and research would also help in providing the necessary support and
+                                    consultancy
+                                    to
+                                    the industries.</div>
+                                <div class="item">To develop and include more Shops and facilities such as Electric
+                                    Shop,
+                                    FRP
+                                    Shop etc. with the aim to provide maximum latest technical exposure to students.
+                                </div>
+                                <div class="item"> To upgrade and make it a central facility of the Institute.
+                                </div>
+                                <div class="item"> To make available each & everything regarding Workshop on IITR
+                                    website.
+                                </div>
+                                <div class="item"> To make online work processing and monitoring system.</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Smithy Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6484
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Welding Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6484
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Carpentry Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                4251
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Electrical Repair & Maintenance Shop</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6480
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Main Store</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6480
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Office</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                4231
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="header">Workshop Gate</div>
-                        <div class="description">
-                            <div>
-                                <i class="call icon"></i>
-                                6478
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ui segment basic">
+
+
+
+
 
             </div>
+
+
+
+
 
         </div>
+    </div>
+    </div>
     </div>
 
     <div class="ui inverted center aligned segment" style="

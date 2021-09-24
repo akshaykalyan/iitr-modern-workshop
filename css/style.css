@@ -1,0 +1,146 @@
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css */
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.fa-search:before{content:"\f002";}
+/*! CSS Used from: https://www.iitr.ac.in/assets/css/dcontent.css */
+header,nav{display:block;}
+button,input{font-family:sans-serif;}
+a:focus{outline:thin dotted;}
+a:active,a:hover{outline:0;}
+ul{margin:1em 0;}
+ul{padding:0 0 0 40px;}
+nav ul{list-style:none;list-style-image:none;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+form{margin:0;}
+button,input{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+button,input{line-height:normal;}
+button{-webkit-appearance:button;cursor:pointer;*overflow:visible;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+button,input{color:#222;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+a{outline:0;color:#2980b9;}
+a:link{text-decoration:none;}
+a:active,a:focus{border:0;outline:0;color:#006585;}
+a:hover{color:#006585;text-decoration:underline;}
+::-moz-selection{background:#b3d4fc;text-shadow:none;}
+::selection{background:#b3d4fc;text-shadow:none;}
+img{vertical-align:middle;}
+::-webkit-input-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+:-moz-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+::-moz-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+:-ms-input-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;}
+header{width:100%;background-color:#fff;webkit-box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.2);-moz-box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.2);box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.2);position:relative;z-index:99;}
+header .topHeaderWrapper{height:30px;background-color:#2980b9;border-bottom:1px solid #F3F3F3;}
+header .mainHeader{height:70px;width:1000px;margin:0 auto;}
+header .mainHeader .deptlogo{width:50%;float:left;font-size:18px;padding-left:0;margin-top:9px;color:#444;}
+header .mainHeader .deptlogo span{font-size:24px;display:block;margin-top:0px;}
+header .mainHeader .logo{width:40%;float:right;}
+header .mainHeader .logo a img{margin-top:6px;height:56px;}
+.topHeaderInner{width:1000px;height:100%;margin:0 auto;}
+.topHeaderInner a{text-decoration:none;}
+.topHeaderInner .topNavItems{font-family:"latoregular", "Helvetica", "Verdana", sans-serif;display:block;color:#fff;padding:4px 5px;float:left;font-size:14px;}
+.topHeaderInner .topNavItems:hover{background-color:#006585;}
+.topHeaderInner .searchbox{width:200px;float:right;margin:3px 0;}
+.topHeaderInner .searchbox input{padding:2px 10px;border-radius:1px;border:0;outline:none;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;color:#888;line-height:1.3em;width:100%;}
+.topHeaderInner .searchbox button{float:right;background-color:rgba(0, 0, 0, 0);border:0;color:#AAA;margin-top:-20px;z-index:10;position:relative;margin-right:8px;outline:none;}
+.menuWrapperOuter{width:100%;z-index:999999;-webkit-box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.1);-moz-box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.1);box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.1);}
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+nav.blue{background-color:#f5f5f5;border-top:1px solid #f2f2f2;}
+nav.blue ul{margin:0px;padding:0px;width:1000px;margin:0 auto;}
+nav.blue li{list-style:none;float:left;position:relative;width:12.5%;text-align:center;color:#666;}
+nav.blue li a{display:block;padding:5px;padding-bottom:6px;text-decoration:none;color:#666;font-size:15px;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;}
+nav.blue li a{background-position:0px 0px;}
+nav.blue li a:hover{background-position:0px -36px;background-color:#EEE;}
+nav.blue li a:active{background-position:0px -72px;}
+nav.blue .dropdown{display:block;float:right;width:7px;height:5px;margin:-20px 15px 0px 12px;}
+nav.blue li ul{opacity:0;position:absolute;-webkit-box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.2);-moz-box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.2);box-shadow:0 1px 2px 0px rgba(50, 50, 50, 0.2);top:40px;left:0;padding:12px 15px;width:auto;border-radius:3px;-moz-border-radius:3px;background-color:#2980b9;display:none;z-index:999999;}
+nav.blue li ul li{border-right:0px;float:none!important;width:180px;}
+nav.blue li ul li:last-child{border-bottom:0px;}
+nav.blue li ul li a{background:none!important;border-left:0px;border-top:0px;font-size:14px;text-align:left;color:#fff;padding:6px;}
+nav.blue li ul li a:hover{opacity:0.5;}
+nav.blue li ul li.arrow{background:url('https://www.iitr.ac.in/assets/images/arrowtop.png') top left no-repeat;border-bottom:0px;height:10px;margin-top:-22px;margin-bottom:10px;}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0);}
+.fa-search:before{content:"\f002";}
+/*! CSS Used fontfaces */
+@font-face{font-family:'FontAwesome';src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0');src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot#iefix&v=4.2.0') format('embedded-opentype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'FontAwesome';src:url("./fonts/fontawesome-webfont.eot?v=4.3.0");src:url("./fonts/fontawesome-webfont.eot#iefix&v=4.3.0") format("embedded-opentype"), url("./fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("./fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("./fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("./fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal;}
+@font-face{font-family:'latoregular';src:url("./fonts/lato-regular-webfont.eot");src:url("./fonts/lato-regular-webfont.eot#iefix") format("embedded-opentype"), url("./fonts/lato-regular-webfont.woff2") format("woff2"), url("./fonts/lato-regular-webfont.woff") format("woff"), url("./fonts/lato-regular-webfont.ttf") format("truetype"), url("./fonts/lato-regular-webfont.svg#latoregular") format("svg");font-weight:normal;font-style:normal;}
+
+
+/*! CSS Used from: https://www.iitr.ac.in/assets/css/dcontent.css */
+footer{display:block;}
+a:focus{outline:thin dotted;}
+a:active,a:hover{outline:0;}
+ul{margin:1em 0;}
+ul{padding:0 0 0 40px;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+a{outline:0;color:#2980b9;}
+a:link{text-decoration:none;}
+a:active,a:focus{border:0;outline:0;color:#006585;}
+a:hover{color:#006585;text-decoration:underline;}
+::-moz-selection{background:#b3d4fc;text-shadow:none;}
+::selection{background:#b3d4fc;text-shadow:none;}
+::-webkit-input-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+:-moz-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+::-moz-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+:-ms-input-placeholder{color:#aaa;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;line-height:1.3em;-webkit-font-smoothing:antialiased;}
+footer{width:100%;background-color:#444;overflow:auto;}
+footer .footerInner{overflow:auto;width:1000px;margin:0 auto;}
+footer .footerInner .divisions{width:25%;float:left;height:100%;padding:20px 40px;padding-left:0;padding-top:20px;}
+footer .footerInner .divisions span{display:block;text-transform:uppercase;font-weight:bolder;color:#fefefe;padding:5px 0;background-image:linear-gradient(to right, #7b7b7b 40%, rgba(255, 255, 255, 0) 20%);background-image:-moz-linear-gradient(to right, #7b7b7b 40%, rgba(255, 255, 255, 0) 20%);background-image:-o-linear-gradient(to right, #7b7b7b 40%, rgba(255, 255, 255, 0) 20%);background-image:-ms-gradient(to right, #7b7b7b 40%, rgba(255, 255, 255, 0) 20%);background-image:-webkit-linear-gradient(to right, #7b7b7b 40%, rgba(255, 255, 255, 0) 20%);background-position:bottom;background-size:3px 1px;background-repeat:repeat-x;}
+footer .footerInner .divisions ul{padding-left:0;margin:0.5em 0;}
+footer .footerInner .divisions ul a{text-decoration:none;}
+footer .footerInner .divisions ul li{list-style-type:none;font-family:"latoregular", "Helvetica", "Verdana", sans-serif;color:#ddd;font-size:13px;}
+footer .footerInner .divisions ul li:hover{color:#fff;text-decoration:underline;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'latoregular';src:url("./fonts/lato-regular-webfont.eot");src:url("./fonts/lato-regular-webfont.eot#iefix") format("embedded-opentype"), url("./fonts/lato-regular-webfont.woff2") format("woff2"), url("./fonts/lato-regular-webfont.woff") format("woff"), url("./fonts/lato-regular-webfont.ttf") format("truetype"), url("./fonts/lato-regular-webfont.svg#latoregular") format("svg");font-weight:normal;font-style:normal;}
+
+
+
+.start {
+    padding-top: 44px;
+    background-color: white;
+
+}
+.ui special cards{
+
+}
+.iitrblack{
+    color: black;
+}.line-clamp {
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+ }
+#cardname{
+    color: #2980b9;
+}
+.card{
+    background-color: #f5f5f5;
+}
+
+#menu1 > a.item.blue.active_menu{
+    background-color: #2980b9 !important;
+    color: white ;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -150px;
+}
+.footer,
+.push {
+    height: 250px;
+}
+.iitr_bg{
+    background-color: #f5f5f5 !important;
+}
+

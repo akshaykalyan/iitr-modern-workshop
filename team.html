@@ -18,6 +18,21 @@ Email: akshaykalyan2307@gmail.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
         type="text/css" />
 
+    <!-- development version -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+    <link href="./dist/jquery.roadmap.min.css" rel="stylesheet" type="text/css" />
+
+
     <style type="text/css">
         body {
             -webkit-font-smoothing: antialiased;
@@ -144,6 +159,68 @@ Email: akshaykalyan2307@gmail.com -->
 </head>
 
 <body>
+    <header>
+        <div class="topHeaderWrapper">
+            <div class="topHeaderInner">
+                <div class="topMenu">
+                    <a href="https://www.iitr.ac.in/Main/pages/_en_For_Faculty__en_.html">
+                        <span class="topNavItems">Employees</span>
+                    </a>
+                    <a href="http://daair.iitr.ac.in">
+                        <span class="topNavItems"> Alumni</span>
+                    </a>
+                    <a href="https://www.iitr.ac.in/Placements/pages/index.html">
+                        <span class="topNavItems">Placements</span>
+                    </a>
+                    <a href="https://www.iitr.ac.in/Main/pages/_en_For_Current_Students__en_.html">
+                        <span class="topNavItems">Students</span>
+                    </a>
+                    <a href="http://www.iitr.ac.in/internationalrelations">
+                        <span class="topNavItems">International Relations</span>
+                    </a>
+                    <a href="https://www.iitr.ac.in/Main/pages/_en_For_Visitors__en_.html">
+                        <div class="topNavItems">Visitors</div>
+                    </a>
+                    <a href="http://www.iitr.ac.in/hi/Main/pages/index.html">
+                        <div class="topNavItems">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;
+                            &#2360;&#2306;&#2360;&#2381;&#2325;&#2352;&#2339;</div>
+                    </a>
+                    <!-- Language Option -->
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                        title="&#2311;&#2360; &#2357;&#2375;&#2348; &#2360;&#2366;&#2311;&#2335; &#2325;&#2375; &#2325;&#2367;&#2360;&#2368; &#2349;&#2368; &#2346;&#2371;&#2359;&#2381;&#2336; &#2325;&#2379; &#2361;&#2367;&#2306;&#2342;&#2368;/&#2309;&#2306;&#2327;&#2381;&#2352;&#2375;&#2332;&#2368; &#2360;&#2361;&#2367;&#2340; &#2309;&#2344;&#2375;&#2325; &#2349;&#2366;&#2352;&#2340;&#2368;&#2351; &#2340;&#2341;&#2366; &#2357;&#2367;&#2342;&#2375;&#2358;&#2368; &#2349;&#2366;&#2359;&#2366;&#2323;&#2306; &#2350;&#2375;&#2306; &#2342;&#2375;&#2326;&#2366; &#2332;&#2366; &#2360;&#2325;&#2340;&#2366; &#2361;&#2376; &#2404; &#2311;&#2360;&#2325;&#2375; &#2354;&#2367;&#2319; &#2357;&#2366;&#2306;&#2331;&#2367;&#2340; &#2346;&#2371;&#2359;&#2381;&#2336; &#2346;&#2352; &#2352;&#2366;&#2311;&#2335; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2325;&#2375; translate to English &#2346;&#2352; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2344;&#2375; &#2360;&#2375; translated &#2325;&#2376;&#2346;&#2381;&#2358;&#2344; &#2310;&#2351;&#2375;&#2327;&#2366; &#2332;&#2367;&#2360;&#2350;&#2375;&#2306; option &#2346;&#2352; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2344;&#2375; &#2360;&#2375; &#2357;&#2366;&#2306;&#2331;&#2367;&#2340; &#2346;&#2371;&#2359;&#2381;&#2336; &#2325;&#2379; &#2350;&#2344;&#2330;&#2366;&#2361;&#2368; &#2349;&#2366;&#2359;&#2366; &#2350;&#2375;&#2306; &#2342;&#2375;&#2326;&#2366; &#2332;&#2366; &#2360;&#2325;&#2340;&#2366; &#2361;&#2376; &#2404;
+    
+    Any page on this web site can be viewed in many Indian and foreign languages, including Hindi / English. For this, right click on the desired page and clicking on translate to English will return the translated caption which allows you to view the desired page in the desired language.">
+                        <div class="topNavItems">Language Option</div>
+                    </a>
+
+                    <!-- Ends -->
+                </div>
+                <div class="searchbox">
+                    <form id="searchbox_000720205207703739410:jvbgxvsvauq"
+                        action="https://www.iitr.ac.in/Main/pages/_en_Search__en_.html">
+                        <input type="hidden" name="cx" value="000720205207703739410:jvbgxvsvauq">
+                        <input type="hidden" name="cof" value="FORID:11">
+                        <input name="q" id="search1" type="text" size="10" placeholder="Search here">
+                        <button type="submit"><i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mainHeader">
+            <div class="deptlogo">
+                Department of <span>Mechanical and Industrial Engineering</span>
+            </div>
+            <div class="logo">
+                <a href="https://www.iitr.ac.in/Main/pages/_en_Indian_Institute_of_Technology_Roorkee__en_.html">
+                    <img src="https://www.iitr.ac.in/assets/images/logo.png" alt="">
+                </a>
+
+            </div>
+        </div>
+
+
+    </header>
     <div class="ui huge top inverted  menu">
         <div class="ui container">
             <a class=" item" href="./index.html">Home</a> <a class="item" href="./about-us.html">About Us</a>
@@ -162,56 +239,290 @@ Email: akshaykalyan2307@gmail.com -->
             class="item " href="./contact-us.html">Contact Us</a>
     </div>
     <!--Page Contents-->
+    <div class="ui container">
 
-    </div>
-    <div class="ui  grid" id="root" style="padding-top: 0px;">
-        <div class="one wide column"></div>
-        <div class="ui " style="margin-right: 20px; margin-top: 32px;">
-            <div id="menu1" class="ui vertical large menu raised" style="position: sticky; top: 44px;"><a
-                    class="item blue" @click="selection(0)" :class="{'active_menu': select===0}">
-                    Fitting Shop
-
-                </a> <a class="item blue" @click="selection(1)" :class="{'active_menu': select===1}">
-                    Machine Shop
-
-                </a><a class="item blue" @click="selection(2)" :class="{'active_menu': select===2}">
-                    Welding Shop
-
-                </a><a class="item blue" @click="selection(3)" :class="{'active_menu': select===3}">
-                    Foundry Shop
-
-                </a><a class="item blue" @click="selection(4)" :class="{'active_menu': select===4}">
-                    Smithy Shop
-                </a><a class="item blue" @click="selection(5)" :class="{'active_menu': select===5}">
-                    Carpentry Shop
-                </a> </div>
+        <div class="ui basic segment">
+            <h2 class="ui horizontal header divider">
+                Professor In-charge
+            </h2>
         </div>
-        <div class="ui items  column five wide">
-            <table class="ui celled table">
-                <thead>
-                    <tr>
-                        <th>{{this.shops[this.select]}} Facilities</th>
+        <div class="ui special cards four column stackable grid raised">
 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(item, index) in shops_facilities[select]" :key="index">
-                        <td data-label="Name">{{item}}</td>
+            <div class="card ">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer transition hidden">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted button">Visit Profile</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui image medium dimmable"
+                        src="./static/images/faculty_pics/5c4a0fa3-7359-408f-abe6-d4fc414706a3.jpg">
+                </div>
+                <div class="content">
 
-                    </tr>
+                    <div class="header name " id="cardname">Coordinator</div>
+                    <div class="meta">
+                        <span class="date">Coordinator</span>
+                    </div>
 
-                </tbody>
-            </table>
+                    <div class="ui list ">
 
-        </div>
-        <div id="gallery2" class="ui items  column five wide">
-            <div class="ui raised segment" v-for="(item, index) in images[select]"> <img
-                    class="ui rounded bordered image" :key="index" :src="'static/images'+item">
 
+                        <div class="item">
+                            <i class="mail icon grey"></i>
+                            <div class="content">
+                                <a class="iitrblack"
+                                    href="tel:inderdeep.singh@me.iitr.ac.in">inderdeep.singh@me.iitr.ac.in</a>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <i class="call icon grey"></i>
+                            <div class="content black">
+                                <a class="iitrblack" href="tel:91-1332-285614">91-1332-285614</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--                    <div class="extra content">-->
+                <!--                    <span class="right floated">-->
+                <!--                        Cited by 2207-->
+                <!--                    </span>-->
+                <!--                        <span>-->
+                <!--                        <i class="book icon"></i>-->
+                <!--                         113 Publications-->
+                <!--                    </span>-->
+                <!--                    </div>-->
             </div>
+            <div class="card ">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer transition hidden">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted button">Visit Profile</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui image medium dimmable"
+                        src="./static/images/faculty_pics/59edf63f-29ae-4529-994a-44669a6f5449.jpg">
+                </div>
+                <div class="content">
 
+                    <div class="header name " id="cardname">Varun Sharma</div>
+                    <div class="meta">
+                        <span class="date">Co-Coordinator</span>
+                    </div>
+
+                    <div class="ui list ">
+
+
+                        <div class="item">
+                            <i class="mail icon grey"></i>
+                            <div class="content">
+                                <a class="iitrblack"
+                                    href="tel:varun.sharma@me.iitr.ac.in">varun.sharma@me.iitr.ac.in</a>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <i class="call icon grey"></i>
+                            <div class="content black">
+                                <a class="iitrblack" href="tel:9990912264">9990912264</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--                    <div class="extra content">-->
+                <!--                    <span class="right floated">-->
+                <!--                        Cited by 24-->
+                <!--                    </span>-->
+                <!--                        <span>-->
+                <!--                        <i class="book icon"></i>-->
+                <!--                         1 Publications-->
+                <!--                    </span>-->
+                <!--                    </div>-->
+            </div>
+            <div class="card " style="">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer transition hidden">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted button">Visit Profile</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui image medium dimmable"
+                        src="./static/images/faculty_pics/eb47a986-7e85-4464-b8cb-179f9f58541f.jpg">
+                </div>
+                <div class="content">
+
+                    <div class="header name " id="cardname">Sushanta Dutta</div>
+                    <div class="meta">
+                        <span class="date">Co-Coordinator</span>
+                    </div>
+
+                    <div class="ui list ">
+
+
+                        <div class="item">
+                            <i class="mail icon grey"></i>
+                            <div class="content">
+                                <a class="iitrblack" href="tel:sushanta@me.iitr.ac.in">sushanta@me.iitr.ac.in</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!--                    <div class="extra content">-->
+                <!--                    <span class="right floated">-->
+                <!--                        Cited by 345-->
+                <!--                    </span>-->
+                <!--                        <span>-->
+                <!--                        <i class="book icon"></i>-->
+                <!--                         20 Publications-->
+                <!--                    </span>-->
+                <!--                    </div>-->
+            </div>
+            <div class="card " style="">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer transition hidden">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted button">Visit Profile</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui image medium dimmable"
+                        src="./static/images/faculty_pics/7f8e6a86-1790-421c-857b-04a29aa6a646.jpg">
+                </div>
+                <div class="content">
+
+                    <div class="header name " id="cardname">Vidit Gaur</div>
+                    <div class="meta">
+                        <span class="date">Co-Coordinator</span>
+                    </div>
+
+                    <div class="ui list ">
+
+
+                        <div class="item">
+                            <i class="mail icon grey"></i>
+                            <div class="content">
+                                <a class="iitrblack" href="tel:vidit.gaur@me.iitr.ac.in">vidit.gaur@me.iitr.ac.in</a>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <i class="call icon grey"></i>
+                            <div class="content black">
+                                <a class="iitrblack" href="tel:+91-1332-284909">+91-1332-284909</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--                    <div class="extra content">-->
+                <!--                    <span class="right floated">-->
+                <!--                        Cited by 50-->
+                <!--                    </span>-->
+                <!--                        <span>-->
+                <!--                        <i class="book icon"></i>-->
+                <!--                         10 Publications-->
+                <!--                    </span>-->
+                <!--                    </div>-->
+            </div>
         </div>
+        <div class="ui basic segment">
+            <h2 class="ui horizontal header divider">
+                Staff
+            </h2>
+        </div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Sections</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Staff">Sh. B.K. Ramaniya</td>
+                    <td data-label="Designation">Superintendent Workshop</td>
+                    <td data-label="Sections">MIED Workshop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Yogender Kumar</td>
+                    <td data-label="Designation">Technical Superintendent</td>
+                    <td data-label="Sections">Carpentry Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Md. Idrees</td>
+                    <td data-label="Designation">Jr. Technical Superintendent</td>
+                    <td data-label="Sections">Machine Shop+ Fitting Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Baleshwar Dutt Sharma</td>
+                    <td data-label="Designation">Sr. Mechanic</td>
+                    <td data-label="Sections">Foundry Shop + Welding Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Umesh Kumar</td>
+                    <td data-label="Designation">Sr. Mechanic</td>
+                    <td data-label="Sections">Machine Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Mukesh Kumar</td>
+                    <td data-label="Designation">Sr. Attendent</td>
+                    <td data-label="Sections">Machine Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Anand Singh</td>
+                    <td data-label="Designation">Sr. Attendent</td>
+                    <td data-label="Sections">Machine Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Ram Kumar Sharma</td>
+                    <td data-label="Designation">Attendent</td>
+                    <td data-label="Sections">Fitting Shop</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Shah Khalid Ali</td>
+                    <td data-label="Designation">Sr. Attendent</td>
+                    <td data-label="Sections">Gardener</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Sachin Kumar</td>
+                    <td data-label="Designation">Sr. Attendent</td>
+                    <td data-label="Sections">Work-hire Technical Staff</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Ashish Kumar</td>
+                    <td data-label="Designation">Sr. Attendent</td>
+                    <td data-label="Sections">Work-hire Technical Staff</td>
+                </tr>
+                <tr>
+                    <td data-label="Staff">Mr. Rahul Kumar</td>
+                    <td data-label="Designation">Sr. Attendent</td>
+                    <td data-label="Sections">Work-hire Technical Staff</td>
+                </tr>
+
+            </tbody>
+        </table>
     </div>
+
 
 
     <div class="ui inverted center aligned segment" style="
@@ -221,141 +532,7 @@ Email: akshaykalyan2307@gmail.com -->
         Copyright © 2021, All Rights Reserved, Modern Workshop, IIT Roorkee
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // fix menu when passed
-            $(".masthead").visibility({
-                once: false,
-                onBottomPassed: function () {
-                    $(".fixed.menu").transition("fade in");
-                },
-                onBottomPassedReverse: function () {
-                    $(".fixed.menu").transition("fade out");
-                }
-            });
 
-            // create sidebar and attach to menu open
-            $(".ui.sidebar").sidebar("attach events", ".toc.item");
-        });
-    </script>
-    <script>
-
-        var shops_facilities = [
-            ["Wire Cut Edm",
-                "Multipurpose Cutting M C",
-                "Band Saw Machine",
-                "Shearing Machine",
-                "Bench Vice On Table",
-                "Pillar Drill Machine",
-                "Column Drill Machine",
-                "Padestral Grinder",
-                "Surface Plate"],
-            ["Cnc Turn Mill",
-                "Shaper Machine",
-                "Slotter Machine",
-                "Milling Machine",
-                "Centre Lathe Machine",
-                "Heavy Lathe Machine",
-                "Turret Lathe Machine",
-                "Hmt Lathe Machine",
-                "Planning Machine",
-                "Boring Machine",
-                "Radial Drilling Machine",
-                "Universal Grinder",
-                "Surface Grinder",
-                "Bench Grinder"
-            ], [
-                "Robotic Welding Machine",
-                "Power Saw Machine",
-                "Hydraulic Press",
-                "Shearing Machine",
-                "Weighing Machine",
-                "Padestal Grinder",
-                "Pillar Drilling Machine",
-                "Arc Welding Set",
-                "Gas Welding Set",
-                "Hand Shearing Machine",
-                "Power Press",
-                "Bench Vice"
-
-            ], [
-                "Sls 3 D Printer",
-                "Fdm 3 D Printer",
-                "Sla 3 D Printer",
-                "Sla Cleaning Machine",
-                "Die Casting Machine",
-                "Pallet Wire Extruder",
-                "Moulding Bench",
-                "Padestal Grinder",
-                "Pit Furnace",
-                "Oil Fired Furnace",
-                "Induction Furnace",
-                "Moulding Machine",
-                "Hand Moulding Machine",
-                "Cooling Tower",
-                "Compressor",
-                "Electric Furnace"
-
-            ], [
-                "POWER HAMMER",
-                "OPEN HEARTH FURNACE ",
-                "ANVIL WITH STAND ",
-                "SWAGE BLOCK"
-
-            ], ["Band Saw Machine",
-                "Circular Saw Machine",
-                "Circular Saw Cum Planner",
-                "Planning Machine",
-                "Wood Working Lathe",
-                "Mortising Machine",
-                "Molding Machine",
-                "Bench Grinder",
-                "Mitre Saw",
-                "Pillar Drilling Machine",
-                "Jig Saw",
-                "Working Table"
-
-            ]
-        ];
-        var images = [
-            ["/1 Machine Shop/20210103_095541.jpg", "/1 Machine Shop/WhatsApp Image 2021-03-19 at 4.25.29 PM (1).jpeg", "/1 Machine Shop/WhatsApp Image 2021-03-19 at 4.25.29 PM.jpeg", "/1 Machine Shop/WhatsApp Image 2021-03-19 at 4.25.32 PM.jpeg"],
-            ["/2 Welding Shop/1.jpeg", "/2 Welding Shop/2.jpeg"],
-            ["/3 Foundry Shop/1.jpeg", "/3 Foundry Shop/20210319_105545.jpg", "/3 Foundry Shop/20210319_110614.jpg", "/3 Foundry Shop/20210319_105409.jpg", "/3 Foundry Shop/20210319_110233.jpg", "/3 Foundry Shop/20210319_111315.jpg"],
-            ["/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.07 PM.jpeg", "/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.07 PM (1).jpeg", "/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.06 PM (1).jpeg", "/4 Carpentry Shop/WhatsApp Image 2021-03-19 at 4.35.05 PM.jpeg",],
-            ["/5 Fitting Shop/WhatsApp Image 2021-03-19 at 4.25.25 PM.jpeg", "/5 Fitting Shop/WhatsApp Image 2021-03-19 at 4.25.24 PM.jpeg", "/5 Fitting Shop/20210103_095527.jpg",],
-            ["/6 Smithy/WhatsApp Image 2021-03-19 at 4.35.01 PM (3).jpeg", "/6 Smithy/WhatsApp Image 2021-03-19 at 4.35.00 PM (4).jpeg", "/6 Smithy/WhatsApp Image 2021-03-19 at 4.35.00 PM (2).jpeg"]
-        ]
-        var select = 0;
-        var shops = ["Fitting Shop",
-            "Machine Shop",
-            "Welding Shop",
-            "Foundry Shop",
-            "Smithy Shop",
-            "Carpentry Shop"];
-
-
-        var app = new Vue({
-            el: "#root",
-            data: {
-                shops_facilities,
-                select,
-                shops,
-                images
-            },
-            methods: {
-                selection: function (i) {
-                    this.select = i
-                    console.log(i)
-                },
-
-            },
-
-
-
-        });
-    </script>
 </body>
 
 </html>
